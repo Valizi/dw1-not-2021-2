@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de medidas</title>
+    <style>
+        /*
+            Unidades de medidas em CSS
+
+            1) Unidades absolutas
+            -px(pixel)
+            -pt(point) medida pra tamanho de fonte
+            -cm(centimetro) para impressao
+            -mm(milimetro) para impressao
+            -in(inches) polegada em ingles
+
+            2) unidades relativas:
+            -% sempre em relação ao tamanho do pai
+            - em: usada para fontes pai
+
+
+        */
+
+        #box1 {
+            background-color: aliceblue;
+            border: 1px solid blue;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            font-size: 20pt;
+        }
+
+        #box2 {
+            background-color: lightyellow;
+            /* dotted é borda pontilhada  */
+            border: 6px dotted orange;
+            width: 6cm;
+            height: 20mm;
+        }
+        #pai1 {
+            background-color: yellowgreen;
+            border: 2px dashed green;
+            text-align: center;
+            width: 500px;
+            height: 300px;
+            font-size: 25pt;
+        }
+        #filho1 {
+            background-color: pink;
+            border: 1px solid darkred;
+            width: 50%;
+            height: 70%;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <div id="box1">
+        texto 1
+    </div>
+
+    <div id="box2">
+        Este quadro impreso em papel tera 6cm de largura por 20mm (2cm) de altura 
+    </div>
+    
+      <div id="pai1">
+        elemento pai
+        <div id="filho1">
+            Elemento filho    
+        </div>
+      </div>   
+    </div>
+    
+</body>
+</html>
